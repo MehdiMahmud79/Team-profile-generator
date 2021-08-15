@@ -1,0 +1,30 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "a node js command app to creat an hrml team profile",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MehdiMahmud79/TeamProfileGenerator.git"
+  },
+  "keywords": [
+    "team",
+    "profile"
+  ],
+  "author": "Mehdi Mahmud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MehdiMahmud79/TeamProfileGenerator/issues"
+  },
+  "homepage": "https://github.com/MehdiMahmud79/TeamProfileGenerator#readme",
+  "dependencies": {
+    "inquirer": "^8.1.2"
+  },
+ 
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
