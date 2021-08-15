@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+.card{
+    background-color: rgb(209, 209, 209);
+    border-radius:20px ;
+}
+.card img{
+    background-color: rgb(209, 209, 209);
+    border-radius:20px 20px 0 0;
+}
+.card-container{
+    border-radius:20px ;
+    padding:0;
+
+}
+.project-fetched .card a:hover, .fab:hover {
+    transform: scale(1.1);
+    transition: all 0.3s easein-out;
+}
+.project-fetched  .card:hover {
+    opacity:0.9;
+    transform: scale(1.02);
+    transition: all 0.5s easein-out;
+}
+
+.gradient-custom:hover {
+    /* fallback for old browsers */
+    background: #959595;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(104, 104, 104, 0.25), rgba(255, 221, 0, 0.25));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.25), rgba(255, 221, 0, 0.25))
+  }
+
+
+.btn{
+    background:rgb(65, 65, 65);
+    padding:5px 20px;
+}
+.btn:hover{
+    background:rgb(12, 12, 12);
+    color:chartreuse;
+} 
+
+#navbarNav .nav-link.active{
+    color:chartreuse;
+}
+#navbarNav .nav-link.active:hover{
+    color:rgb(255, 0, 0);
+}
+#navbarNav .nav-link:hover{
+    color:rgb(0, 255, 13);
+}
+#navbarNav{
+    position: absolute;
+    right:20px;
+} 
+.navbar-brand:hover {
+    transform: scale(1.05);
+    transition: all 0.5s easein-out;
+}
+@media only screen and (max-width: 768px){
+#navbarNav{
+    position: relative;
+    left:20px;
+}    
+
+}

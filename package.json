@@ -4,7 +4,7 @@
   "description": "using command line to generate a team profile",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --verbose test/*"
   },
   "repository": {
     "type": "git",
