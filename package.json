@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/MehdiMahmud79/TeamProfileGenerator#readme",
   "dependencies": {
-    "inquirer": "^8.1.2"
+    "email-validator": "^2.0.4",
+    "inquirer": "^8.1.2",
+    "uuid": "^8.3.2",
+    "uuid-validate": "0.0.3"
   }
 }
