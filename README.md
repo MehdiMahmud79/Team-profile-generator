@@ -61,7 +61,7 @@ THEN I exit the application, and the HTML is generated
 
 The following image shows a mock-up of the generated HTML’s appearance and functionality:
 
-![Test results using jest.](./dist/testResult.jpg)
+![Test results using jest.](./assets/testResult.jpg)
 
 The styling in the image is just an example, so feel free to add your own.
 
