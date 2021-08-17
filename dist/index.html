@@ -1,8 +1,4 @@
-
-let TeamHtml = (Team) => {
-
-  
-  let htmlHeader = `<!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
 
     <head>
@@ -27,7 +23,7 @@ let TeamHtml = (Team) => {
                 text-warning
                 border-info border-bottom border-4
                 py-0
-            " id="teamName" href="#">${Team.teamName}</a>
+            " id="teamName" href="#">nazanm jare</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -66,10 +62,10 @@ let TeamHtml = (Team) => {
                     <h5 class="card-title mb-0"><i class="fas fa-id-card"></i> Manager</h5>
                 </div>
                 <div class="row align-items-center mb-2 d-flex">
-                <h4 class="card-title text-info"> ${Team.members[0].getName()}</h4> 
-                <h6><span class="text-dark"><i class="far fa-id-badge"></i> ID: </span> ${Team.members[0].getId()}</h6>
-                <h6><span class="text-dark"><i class="fa fa-envelope"></i> Email:</span> ${Team.members[0].getEmail()}</h6>
-                <h6><span class="text-dark"><i class="fa fa-suitcase"></i> Office No.:</span> ${Team.members[0].getOfficeNumber()} </h6>
+                <h4 class="card-title text-info"> mehdi</h4> 
+                <h6><span class="text-dark"><i class="far fa-id-badge"></i> ID: </span> 8af45314-e999-4324-8c96-23717dfe87e9</h6>
+                <h6><span class="text-dark"><i class="fa fa-envelope"></i> Email:</span> mehdi@gmail.com</h6>
+                <h6><span class="text-dark"><i class="fa fa-suitcase"></i> Office No.:</span> 123 </h6>
                 </div>
 
             </div>
@@ -91,24 +87,7 @@ let TeamHtml = (Team) => {
     </h1>
     
     
-    `
-    ;
-
-  let Enginears = enginearCards(Team);
-  let Interns = internCard(Team);
-  return htmlHeader + Enginears + Interns ;
-};
-
-let enginearCards = (Team) => {
-
-  const teamMembers = Team.members;
-
-  const Enginears = teamMembers.filter(item => item.constructor.name =="Engineer");
-  
-  let engCards = "";
-
-  Enginears.forEach((eng) => {
-    engCards += `
+    
 
         <div class="col card  l-bg-green-dark">
             <div class="cardLogo p-4 ">
@@ -117,19 +96,34 @@ let enginearCards = (Team) => {
                     <h5 class="card-title mb-0"><i class="fas fa-user"></i> Engineer</h5>
                 </div>
                 <div class="row align-items-center mb-2 d-flex">
-                <h4 class="card-title text-info"> ${eng.getName()}</h4>
-                <h6><span class="text-dark"><i class="far fa-id-badge"></i> ID: </span> ${eng.getId()}</h6>
-                <h6><span class="text-dark"><i class="fa fa-envelope"></i> Email: </span> ${eng.getEmail()}</h6>
-                <h6 ><span class="text-dark text-decoration-non eactive"><i class="fab fa-github"></i> GitHub: </span> <a class=" text-decoration-none text-warning" target = "_blank" href="https://github.com/${eng.getGithub()}/">${eng.getGithub()}</a></h6>
+                <h4 class="card-title text-info"> jabar</h4>
+                <h6><span class="text-dark"><i class="far fa-id-badge"></i> ID: </span> c9c8d95a-caa4-4155-9cb0-6343f07e846a</h6>
+                <h6><span class="text-dark"><i class="fa fa-envelope"></i> Email: </span> jabar@gmail.com</h6>
+                <h6 ><span class="text-dark text-decoration-non eactive"><i class="fab fa-github"></i> GitHub: </span> <a class=" text-decoration-none text-warning" target = "_blank" href="https://github.com/jabarraswl/">jabarraswl</a></h6>
             
                 </div>
             </div>
         </div>
         
-           `;
-  });
+           
 
-  let htmlMiddle = `
+        <div class="col card  l-bg-green-dark">
+            <div class="cardLogo p-4 ">
+                <div class="card-icon card-icon-large  display-1"><i class="fas fa-users"></i></div>
+                <div class="mb-4">
+                    <h5 class="card-title mb-0"><i class="fas fa-user"></i> Engineer</h5>
+                </div>
+                <div class="row align-items-center mb-2 d-flex">
+                <h4 class="card-title text-info"> maliha</h4>
+                <h6><span class="text-dark"><i class="far fa-id-badge"></i> ID: </span> 164b0a79-8483-428d-ace9-bd578ca41a4b</h6>
+                <h6><span class="text-dark"><i class="fa fa-envelope"></i> Email: </span> maliha@gmail.com</h6>
+                <h6 ><span class="text-dark text-decoration-non eactive"><i class="fab fa-github"></i> GitHub: </span> <a class=" text-decoration-none text-warning" target = "_blank" href="https://github.com/malihajabar/">malihajabar</a></h6>
+            
+                </div>
+            </div>
+        </div>
+        
+           
 
           </div>
               <div class="col mx-1">
@@ -137,18 +131,7 @@ let enginearCards = (Team) => {
                 <i class="fas fa-book-reader p-1 text-warning"></i> Intern members 
                 </h1>
                 
-                `;
-  return engCards + htmlMiddle;
-};
-
-let internCard = (Team) => {
-  const teamMembers = Team.members;
-  const Interns = teamMembers.filter(item => item.constructor.name =="Intern");
-
-  let InternCards = "";
-
-  Interns.forEach((Intern) => {
-    InternCards += `
+                
 
     <div class="col card  l-bg-orange-dark">
             <div class="cardLogo p-4  ">
@@ -157,33 +140,45 @@ let internCard = (Team) => {
                     <h5 class="card-title mb-0"><i class="fas fa-user"></i> Intern</h5>
                 </div>
                 <div class="row align-items-center mb-2 d-flex">
-                    <h4 class="card-title text-info">${Intern.getName()}</h4>
-                    <h6><span class="text-dark"><i class="far fa-id-badge"></i> ID: </span> ${Intern.getId()}</h6>
-                    <h6><span class="text-dark"><i class="fa fa-envelope"></i> Email:</span> ${Intern.getEmail()}</h6>
-                    <h6><span class="text-dark"><i class="fas fa-school"></i> School:</span> ${Intern.getSchool()}</h6>
+                    <h4 class="card-title text-info">cat</h4>
+                    <h6><span class="text-dark"><i class="far fa-id-badge"></i> ID: </span> a5294d7b-57a6-4bca-b6fe-9482ca6543cd</h6>
+                    <h6><span class="text-dark"><i class="fa fa-envelope"></i> Email:</span> cat@gmail.com</h6>
+                    <h6><span class="text-dark"><i class="fas fa-school"></i> School:</span> wrexham</h6>
             
                 </div>
             </div>
           </div>
 
-            `;
-  });
-  let htmlFooter = `
+            
+
+    <div class="col card  l-bg-orange-dark">
+            <div class="cardLogo p-4  ">
+                <div class="card-icon card-icon-large display-1"><i class="fas fa-users"></i></div>
+                <div class="mb-4">
+                    <h5 class="card-title mb-0"><i class="fas fa-user"></i> Intern</h5>
+                </div>
+                <div class="row align-items-center mb-2 d-flex">
+                    <h4 class="card-title text-info">sian</h4>
+                    <h6><span class="text-dark"><i class="far fa-id-badge"></i> ID: </span> 93e7dff6-9321-45de-9d68-e7ee59afb5db</h6>
+                    <h6><span class="text-dark"><i class="fa fa-envelope"></i> Email:</span> sian@gmail.com</h6>
+                    <h6><span class="text-dark"><i class="fas fa-school"></i> School:</span> nie</h6>
+            
+                </div>
+            </div>
+          </div>
+
+            
 
 
         </div>   
     </div>
     
     </div>
-    script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
 
 
     </body>
 
-    </html>`;
-  return InternCards + htmlFooter;
-};
-
-module.exports = TeamHtml;
+    </html>
