@@ -1,4 +1,6 @@
-TeamHtml = (Team) => {
+let TeamHtml = (Team) => {
+
+  
   let htmlHeader = `<!DOCTYPE html>
     <html lang="en">
 
@@ -63,7 +65,7 @@ TeamHtml = (Team) => {
                     <h5 class="card-title mb-0"><i class="fas fa-id-card"></i> Manager</h5>
                 </div>
                 <div class="row align-items-center mb-2 d-flex">
-                <h4 class="card-title text-info">${Team.members[0].getName()}</h4>
+                <h4 class="card-title text-info"> ${Team.members[0].getName()}</h4> 
                 <h6><span class="text-dark"><i class="far fa-id-badge"></i> ID: </span> ${Team.members[0].getId()}</h6>
                 <h6><span class="text-dark"><i class="fa fa-envelope"></i> Email:</span> ${Team.members[0].getEmail()}</h6>
                 <h6><span class="text-dark"><i class="fa fa-suitcase"></i> Office No.:</span> ${Team.members[0].getOfficeNumber()} </h6>
@@ -86,20 +88,28 @@ TeamHtml = (Team) => {
     <h1 class="fs-5 fs-sm-3 bg-dark m-0 my-2 text-primary text-center" id="enginears">
         <i class="fas fa-drafting-compass p-1 text-warning"></i> Enginear members 
     </h1>
-    <div class="col card  l-bg-green-dark">`;
+    
+    
+    `
+    ;
 
-  let Enginears = enginearCard(Team);
+  let Enginears = enginearCards(Team);
   let Interns = internCard(Team);
-  return htmlHeader + Enginears + Interns;
+  return htmlHeader + Enginears + Interns ;
 };
 
-enginearCard = (Team) => {
-  let Enginears = Team.members.filter((member) => {
-    member.constructor.name === "Engineer";
-  });
+let enginearCards = (Team) => {
+
+  const teamMembers = Team.members;
+
+  const Enginears = teamMembers.filter(item => item.constructor.name =="Engineer");
+  
+  let engCards = "";
+
   Enginears.forEach((eng) => {
-    let engCards = "";
     engCards += `
+
+        <div class="col card  l-bg-green-dark">
             <div class="cardLogo p-4 ">
                 <div class="card-icon card-icon-large  display-1"><i class="fas fa-users"></i></div>
                 <div class="mb-4">
@@ -113,28 +123,33 @@ enginearCard = (Team) => {
             
                 </div>
             </div>
+        </div>
+        
            `;
   });
 
   let htmlMiddle = `
-            </div>   
-              </div>
+
+          </div>
               <div class="col mx-1">
                 <h1 class="fs-5 fs-sm-3 bg-dark m-0 my-2 text-primary text-center" " id="projects">
                 <i class="fas fa-book-reader p-1 text-warning"></i> Intern members 
                 </h1>
-                <div class="col card  l-bg-orange-dark">
+                
                 `;
   return engCards + htmlMiddle;
 };
 
-internCard = (Team) => {
-  let Interns = Team.members.filter((member) => {
-    member.constructor.name === "Intern";
-  });
+let internCard = (Team) => {
+  const teamMembers = Team.members;
+  const Interns = teamMembers.filter(item => item.constructor.name =="Intern");
+
+  let InternCards = "";
+
   Interns.forEach((Intern) => {
-    let InternCards = "";
     InternCards += `
+
+    <div class="col card  l-bg-orange-dark">
             <div class="cardLogo p-4  ">
                 <div class="card-icon card-icon-large display-1"><i class="fas fa-users"></i></div>
                 <div class="mb-4">
@@ -148,12 +163,14 @@ internCard = (Team) => {
             
                 </div>
             </div>
+          </div>
+
             `;
   });
   let htmlFooter = `
-            </div>
-        </div>   
 
+
+        </div>   
     </div>
     
     </div>

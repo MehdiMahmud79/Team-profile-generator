@@ -11,7 +11,7 @@ const EmailValidator = require("email-validator");
 var team="";
 const { v4: uuidv4 } = require('uuid');
     
- creatTeam=()=> {
+ let creatTeam=()=> {
      return new Promise((resolve,reject)=>{
 
      
@@ -39,7 +39,7 @@ const { v4: uuidv4 } = require('uuid');
 
 
 
-        addManager=(team)=> {
+       let addManager=(team)=> {
 
             inquirer.prompt([
                 {
@@ -95,13 +95,14 @@ const { v4: uuidv4 } = require('uuid');
                     const officeNumber = data.officeNumber;
                     const teamMember = new Manager(name, id, email, officeNumber);
                     team.members.push(teamMember);
-                    console.log("your team members are ", team)
+
+                    console.log("your team members are ", team);
                     addTeamMembers(team);
                 });
         
         }
         
-        addTeamMembers= (team)=> {
+      let  addTeamMembers= (team)=> {
             console.log(" adding a team member data")
         
             inquirer.prompt([
@@ -143,7 +144,7 @@ const { v4: uuidv4 } = require('uuid');
         };
         
         
-        addEngineer=(team)=> {
+      let  addEngineer=(team)=> {
             inquirer.prompt([
                 {
                     message: "What is this engineer's name?",
@@ -201,7 +202,7 @@ const { v4: uuidv4 } = require('uuid');
         
         };
         
-        addIntern=(team)=> {
+       let addIntern=(team)=> {
         
             inquirer.prompt([
                 {
@@ -260,7 +261,7 @@ const { v4: uuidv4 } = require('uuid');
 };
 
 
-renderTeam=(finalHtml) =>{
+let renderTeam=(finalHtml) =>{
 
     console.log("The final team is \n", finalHtml)
   };
