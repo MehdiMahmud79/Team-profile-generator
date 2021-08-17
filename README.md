@@ -14,7 +14,8 @@ npm install --save-dev jest
 npm install email-validator
 npm install uuid
 npm install uuid-validate
-
+npm install jquery
+npm install jsdom
 
 
 # 10 Object-Oriented Programming: Team Profile Generator

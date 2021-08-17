@@ -1,8 +1,12 @@
-const inquirer = require("inquirer");
-const fs = require("fs");
-const {creatTeam, Team} = require("./lib/functions");
+const {creatTeam,renderTeam}= require("./src/functions");
 
-let teamMembers=[];
+var TeamHtml=require("./src/htmTamplate");
 
-creatTeam()
-// console.log(Team)
+// console.log(htmTamplate)
+async function init(){
+    let Team=await creatTeam();
+    let finalHtml=TeamHtml(Team);
+    renderTeam(TeamHtml(finalHtml));
+}
+
+init();

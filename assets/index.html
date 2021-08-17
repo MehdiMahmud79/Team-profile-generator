@@ -8,9 +8,9 @@
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
 
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
   <title>Team Profile</title>
 </head>
 
@@ -38,12 +38,9 @@
                 <a class="nav-link " href="#manager">Manager</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#engineers">Engineers</a>
+                <a class="nav-link" href="#teamMembers">Members</a>
               </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#intern">Interns</a>
-              </li>
             </ul>
 
           </div>
@@ -52,36 +49,113 @@
 
   </nav>
 
-
-
-  <!-- Team section -->
-  <h1 class="display-7 bg-dark m-0 my-4 text-primary text-center" id="projects">
+  <!-- Team manager section -->
+  <h1 class="fs-3 bg-light m-0 my-4 text-primary text-center" id="manager">
     <i class="fas fa-chalkboard-teacher p-2"></i>
-    Team
+    Team Manager
   </h1>
+  <div class="container  col-sm-6 col-lg-4  m-4  mx-auto">
+    <div class="card l-bg-cherry">
+        <div class="cardLogo p-4  ">
+            <div class="card-icon card-icon-large  display-1"><i class="fas fa-users"></i></div>
+            <div class="mb-4">
+                <h5 class="card-title mb-0"><i class="fas fa-id-card"></i> Manager</h5>
+            </div>
+            <div class="row align-items-center mb-2 d-flex">
+              <h4 class="card-title text-info">Mehdi</h4>
+              <h6><span class="text-dark"><i class="far fa-id-badge"></i> ID: </span> 12223434</h6>
+              <h6><span class="text-dark"><i class="fa fa-envelope"></i> Email:</span> mehdi@gmail.com</h6>
+              <h6><span class="text-dark"><i class="fa fa-suitcase"></i> Office No.:</span> 12 </h6>
+              
+            </div>
 
-  <div class="container">
-    <div class="
-          border border-light
-          row row-cols-1 row-cols-md-2 row-cols-lg-3
-          bg-dark
-          project-fetched
-        ">
-      <!-- add all the project cards here -->
+        </div>
     </div>
+</div>
+
+<h1 class="fs-3 bg-light  my-4 text-primary text-center" id="teamMembers">
+  <i class="fa fa-users p-2"></i>
+  Team Members
+</h1>
+ <!-- end of paer one -->
+
+<div class="container">
+  <div class="row ">
+
+ <div class="col mx-1">
+  <h1 class="fs-5 fs-sm-3 bg-dark  my-2 text-primary text-center" id="enginears">
+    <i class="fas fa-drafting-compass p-1 text-warning"></i> Enginear members 
+  </h1>
+ 
+  <div class="col card  l-bg-green-dark">
+    <div class="cardLogo p-4 ">
+        <div class="card-icon card-icon-large  display-1"><i class="fas fa-users"></i></div>
+        <div class="mb-4">
+            <h5 class="card-title mb-0"><i class="fas fa-user"></i> Engineer</h5>
+        </div>
+        <div class="row align-items-center mb-2 d-flex">
+          <h4 class="card-title text-info">Mehdi</h4>
+          <h6><span class="text-dark"><i class="far fa-id-badge"></i> ID: </span> 12223434</h6>
+          <h6><span class="text-dark"><i class="fa fa-envelope"></i> Email: </span> mehdi@gmail.com</h6>
+          <h6 ><span class="text-dark text-decoration-non eactive"><i class="fab fa-github"></i> GitHub: </span> <a class=" text-decoration-none text-warning" target = "_blank" href="https://github.com/MehdiMahmud79/">mehdimahmud79</a></h6>
+     
+        </div>
+    </div>
+  </div>  
+  <div class="col card  l-bg-green-dark">
+    <div class="cardLogo p-4 ">
+        <div class="card-icon card-icon-large  display-1"><i class="fas fa-users"></i></div>
+        <div class="mb-4">
+            <h5 class="card-title mb-0"><i class="fas fa-user"></i> Engineer</h5>
+        </div>
+        <div class="row align-items-center mb-2 d-flex">
+          <h4 class="card-title text-info">Mehdi</h4>
+          <h6><span class="text-dark"><i class="far fa-id-badge"></i> ID: </span> 12223434</h6>
+          <h6><span class="text-dark"><i class="fa fa-envelope"></i> Email: </span> mehdi@gmail.com</h6>
+          <h6><span class="text-dark"><i class="fab fa-github"></i> GitHub: </span> mehdimahmud79</h6>
+    
+        </div>
+    </div>
+  </div>  
+
   </div>
+
+      <div class="col mx-1">
+        <h1 class="fs-5 bg-dark  my-2 text-primary text-center " id="projects">
+          <i class="fas fa-book-reader p-1 text-warning"></i> Intern members 
+        </h1>
+        <div class="col card  l-bg-orange-dark">
+          <div class="cardLogo p-4  ">
+              <div class="card-icon card-icon-large display-1"><i class="fas fa-users"></i></div>
+              <div class="mb-4">
+                  <h5 class="card-title mb-0"><i class="fas fa-user"></i> Intern</h5>
+              </div>
+              <div class="row align-items-center mb-2 d-flex">
+                <h4 class="card-title text-info">Mehdi</h4>
+                <h6><span class="text-dark"><i class="far fa-id-badge"></i> ID: </span> 12223434</h6>
+                <h6><span class="text-dark"><i class="fa fa-envelope"></i> Email:</span> mehdi@gmail.com</h6>
+                <h6><span class="text-dark"><i class="fas fa-school"></i> School:</span>  </h6>
+          
+              </div>
+          </div>
+        </div>
+      </div>   
+
+  </div>
+  
+</div>
+
+
 
  
 
+ 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
     crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
 
-  <script src="../index.js"></script>
+
 </body>
 
 </html>
