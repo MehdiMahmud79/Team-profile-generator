@@ -1,4 +1,4 @@
-const { creatTeam, renderTeam } = require("./src/functions");
+const creatTeam= require("./src/functions");
 const fs = require("fs");
 
 var TeamHtml = require("./src/htmTamplate.js");
@@ -15,12 +15,11 @@ fs.writeFile('./dist/style.css', cssStyle, function (err) {
   console.log('css style Saved in to dist/style.css!');
 });
 // console.log("got this html ", finalHtml)
-fs.writeFile('./dist/index.html', finalHtml, function (err) {
+fs.writeFile(`./dist/${Team.teamName}.html`, finalHtml, function (err) {
   if (err) throw err;
   console.log('HTML file is Saved in to dist/index.html!');
 });
 
-//   renderTeam(TeamHtml(finalHtml));
 }
 
 init();

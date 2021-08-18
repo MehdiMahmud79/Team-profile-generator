@@ -259,11 +259,4 @@ const { v4: uuidv4 } = require('uuid');
     })
 };
 
-
-let renderTeam=(finalHtml) =>{
-
-    console.log("The final team is \n", finalHtml)
-  };
-
-
-module.exports ={creatTeam,renderTeam};
+module.exports =creatTeam;
