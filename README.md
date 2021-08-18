@@ -9,17 +9,32 @@ A proffesional Team maker app.
 # Table of Contents 
 
 * [Description](#description)
+* [Mock-Up](#🚀)
 * [Installation](#installation)
 * [Testing](#🔎💻)
 * [Generate the Team](#📚)
 * [Questions](#❔)
-* [Mock-Up](#🚀)
+
 
 
 ## 📝
 ## Description 
   This app is Object-Oriented Programming to generate a Team profile and render it in to an Html file. The Html will include the team name, manager profile, engineer team as well as the Intern team.
   Also, thsi app is powered by a jest test debugger to check the team profile classes.
+
+## 🚀
+## Mock-Up
+
+The following image shows the test procedure by jest:
+
+![📹 Test results using jest.](./assets/test.gif)
+
+[📸 An image shows the test result](./dist/test.jpg)
+
+The following image shows a mock-up of the generated HTML’s appearance and functionality:
+
+![Test results using jest.](./assets/test.gif)
+🔴📺
 
 ## 🛠️ 
 ##  Installation
@@ -77,13 +92,7 @@ You will be asked for the:
   * This process will continue until you input all the team members and their information.
 
 ```
-## 🚀
-## Mock-Up
 
-The following image shows a mock-up of the generated HTML’s appearance and functionality:
-
-![Test results using jest.](./assets/testResult.jpg)
-🔴📺
 
 
 
