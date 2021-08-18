@@ -33,8 +33,14 @@ The following image shows the test procedure by jest:
 
 The following image shows a mock-up of the generated HTML’s appearance and functionality:
 
-![Test results using jest.](./assets/test.gif)
+![Test results using jest.](./assets/screen.gif)
+
+### Youtube videos to demonstrate the project
 🔴📺
+
+* [📹 YouTube video for Testing the App.](https://youtu.be/72IMdktjbZk)
+
+* [📹 YouTube video for App. functionality](https://youtu.be/O4aNoakMn0o)
 
 ## 🛠️ 
 ##  Installation
