@@ -98,7 +98,9 @@ You will be asked for the:
   * This process will continue until you input all the team members and their information.
 
 ```
-
+## Websites
+* Github: https://github.com/MehdiMahmud79/TeamProfileGenerator
+* Deployed: https://mehdimahmud79.github.io/TeamProfileGenerator/
 
 
 
