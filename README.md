@@ -20,7 +20,7 @@ A proffesional Team maker app.
 ## 📝
 ## Description 
   This app is Object-Oriented Programming to generate a Team profile and render it in to an Html file. The Html will include the team name, manager profile, engineer team as well as the Intern team.
-  Also, thsi app is powered by a jest test debugger to check the team profile classes.
+  Also, this app is powered by a jest test debugger to check the team profile classes. The created Html page is powere dy Bootsrap and it is responsive.
 
 ## 🚀
 ## Mock-Up
