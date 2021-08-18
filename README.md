@@ -100,7 +100,7 @@ You will be asked for the:
 ```
 ## Websites
 * Github: https://github.com/MehdiMahmud79/TeamProfileGenerator
-* Deployed: https://mehdimahmud79.github.io/TeamProfileGenerator/
+* Live: https://mehdimahmud79.github.io/TeamProfileGenerator/
 
 
 
