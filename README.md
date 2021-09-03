@@ -45,7 +45,6 @@ The following image shows a mock-up of the generated HTML’s appearance and fun
 ## 🛠️ 
 ##  Installation
 ```bash
-npm init
 npm i
 ```
 
@@ -64,7 +63,7 @@ npm i
 ## Testing 
   To test the app run the following command in the command line
   ```bash
-  npm test
+  npm run test
   ```
   Which eill test the following 
   Employee.test.js
@@ -78,7 +77,7 @@ npm i
   To generate a team you may need to run the following command and answer the prompt question with an approperiate answer which will ne checked for the correct format.
 
 ```bash
-npm start
+npm run start
 ```
 Or
 
