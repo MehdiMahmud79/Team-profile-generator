@@ -155,7 +155,7 @@ let internCard = (Team) => {
                 <div class="row align-items-center mb-2 d-flex">
                     <h4 class="card-title text-info">${Intern.getName()}</h4>
                     <h6><span class="text-dark"><i class="far fa-id-badge"></i> ID: </span> ${Intern.getId()}</h6>
-                    <h6><span class="text-dark"><i class="fa fa-envelope"></i> Email:</span> ${Intern.getEmail()}</h6>
+                    <h6><span class="text-dark"><i class="fa fa-envelope"></i> Email:</span> <a href="mailto:${Intern.getEmail()}</a> ${Intern.getEmail()}</h6>
                     <h6><span class="text-dark"><i class="fas fa-school"></i> School:</span> ${Intern.getSchool()}</h6>
             
                 </div>
