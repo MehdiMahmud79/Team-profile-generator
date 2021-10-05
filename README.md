@@ -2,9 +2,9 @@
 
 # Team-Profile-Generator
 A proffesional Team maker app.
-![badmath](https://img.shields.io/github/issues/MehdiMahmud79/TeamProfileGenerator)
-![badmath](https://img.shields.io/github/forks/MehdiMahmud79/TeamProfileGenerator)
-![badmath](https://img.shields.io/github/stars/MehdiMahmud79/TeamProfileGenerator)
+![badmath](https://img.shields.io/github/issues/MehdiMahmud79/Team-profile-generator)
+![badmath](https://img.shields.io/github/forks/MehdiMahmud79/Team-profile-generator)
+![badmath](https://img.shields.io/github/stars/MehdiMahmud79/Team-profile-generator)
 
 # Table of Contents 
 
@@ -98,8 +98,8 @@ You will be asked for the:
 
 ```
 ## Websites
-* Github: https://github.com/MehdiMahmud79/TeamProfileGenerator
-* Live: https://mehdimahmud79.github.io/TeamProfileGenerator/
+* Github: https://github.com/MehdiMahmud79/Team-profile-generator
+* Live: https://mehdimahmud79.github.io/Team-profile-generator/
 
 
 
